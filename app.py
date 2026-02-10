@@ -21,7 +21,7 @@ def extract_text(file): # Determine file type and extract text accordingly
 
 @app.route('/compare', methods=['POST']) # Define a route for comparing two files
 def compare(): # Check if both files are present in the request
-    THRESHOLD = 30.0  # Common academic benchmark for plagiarism detection
+    THRESHOLD = 20.0  # Common academic benchmark for plagiarism detection
 
     if 'file1' not in request.files or 'file2' not in request.files: # If either file is missing, return an error response
         return jsonify({"error": "Please upload two files"}), 400 # Return a JSON response with an error message and a 400 Bad Request status code
@@ -30,8 +30,8 @@ def compare(): # Check if both files are present in the request
     text1 = extract_text(request.files['file1'])
     text2 = extract_text(request.files['file2'])
 
-    # Group 5 Requirement: N-grams (1, 2) and Cosine Similarity
-    vectorizer = TfidfVectorizer(ngram_range=(1, 2)) # Create a TF-IDF vectorizer that considers both unigrams and bigrams
+    # Group 5 Requirement: N-grams (2, 3) and Cosine Similarity
+    vectorizer = TfidfVectorizer(ngram_range=(2, 3)) # Create a TF-IDF vectorizer that considers both bigrams and trigrams
     tfidf_matrix = vectorizer.fit_transform([text1, text2]) # Fit the vectorizer to the two texts and transform them into TF-IDF matrices
     score = cosine_similarity(tfidf_matrix[0:1], tfidf_matrix[1:2])[0][0] * 100 # Calculate the cosine similarity between the two TF-IDF vectors and extract the similarity score as a percentage
 
