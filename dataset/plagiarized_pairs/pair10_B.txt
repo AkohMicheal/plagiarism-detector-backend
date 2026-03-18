@@ -1,0 +1,1 @@
+The efficient organization of data relies heavily on foundational computer science concepts known as sorting algorithms. For example, Quick Sort and Merge Sort handle massive amounts of data much better than Bubble Sort, which, despite its simplicity, suffers from poor performance due to its quadratic time constraints.

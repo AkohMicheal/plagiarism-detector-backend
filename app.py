@@ -1,3 +1,5 @@
+import os
+
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -45,4 +47,7 @@ def compare(): # Check if both files are present in the request
     }) # Return a JSON response with the similarity score, prediction, and status
 
 if __name__ == '__main__':
-    app.run(debug=True, port=5000)
+    # Render and other cloud providers dynamically assign a port. 
+    # This checks for that port, and defaults to 5000 for local testing.
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host='0.0.0.0', port=port, debug=False)

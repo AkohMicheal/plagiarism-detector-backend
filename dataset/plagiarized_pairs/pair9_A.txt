@@ -1,0 +1,1 @@
+Blockchain is a distributed ledger technology that ensures transparency and immutability. Each block contains a cryptographic hash of the previous block, a timestamp, and transaction data. Because the network is decentralized, it is highly resistant to modification or hacking, making it ideal for financial transactions.

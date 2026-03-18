@@ -1,0 +1,1 @@
+A distributed ledger technology called blockchain ensures transparency and immutability. It is highly resistant to modification or hacking because the network is decentralized. Making it ideal for financial transactions, each block contains a cryptographic hash of the previous block, transaction data, and a timestamp.

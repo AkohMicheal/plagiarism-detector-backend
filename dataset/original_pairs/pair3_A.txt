@@ -1,0 +1,1 @@
+A zero-trust network architecture assumes that no user or device is inherently trustworthy, regardless of whether they are inside or outside the corporate perimeter. Strict identity verification and least-privilege access controls are mandatory to prevent lateral movement by attackers.
