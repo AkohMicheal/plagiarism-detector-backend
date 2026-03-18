@@ -1,0 +1,1 @@
+Sorting algorithms are fundamental to computer science, determining how data is organized efficiently. While Bubble Sort is easy to understand and implement, its time complexity makes it highly inefficient for large datasets compared to algorithms like Quick Sort or Merge Sort.

@@ -1,0 +1,1 @@
+The Internet of Things (IoT) links physical objects to the web, permitting them to gather and share information. This networking improves productivity in intelligent houses and manufacturing automation, yet it also creates major privacy and protection issues.

@@ -1,0 +1,1 @@
+Agile software development emphasizes iterative progress, team collaboration, and adaptability. Unlike the traditional waterfall model, Agile frameworks like Scrum allow teams to respond to changing customer requirements quickly by delivering functional software in short cycles known as sprints.
